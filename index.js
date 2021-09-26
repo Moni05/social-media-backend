@@ -36,4 +36,5 @@ app.use("/user", UserRouter);
 app.use("/auth", authRouter);
 app.use("/post", postRouter);
  
-app.listen(3001, ()=>console.log("Server running at port 3001"));
+app.listen(process.env.PORT || 3001
+, ()=>console.log("Server running"));
